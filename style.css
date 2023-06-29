@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-body{
+body {
     height: 100vh;
     width: 100vw;
     box-sizing: content-box;
@@ -48,7 +48,7 @@ body{
     /* background-color: antiquewhite; */
 }
 
-.search{
+.search {
     display: flex;
     align-items: center;
 }
@@ -86,7 +86,7 @@ main {
     flex-direction: column;
 }
 
-.icon{
+.icon {
     width: 30px;
     height: 30px;
     margin-top: 30px;
@@ -115,23 +115,23 @@ main {
     cursor: pointer;
 }
 
-.element{
+.element {
     position: relative;
 }
 
-.image{
+.image {
     border-radius: 15px;
     width: 100%;
     height: 100%;
 }
 
-.image:hover{
+.image:hover {
     border-radius: 0;
     transition: 0.5s ease-in-out;
     transform: scale(1.01);
 }
 
-.time{
+.time {
     background-color: rgb(79, 68, 68);
     color: white;
     position: absolute;
@@ -139,17 +139,19 @@ main {
     right: 10px;
 }
 
-.card-title{
+.card-title {
     font-size: 17px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.channel{
+
+.channel {
     font-size: 17px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.views{
+
+.views {
     font-size: 17px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 @media screen and (max-width:955px) {
@@ -158,7 +160,7 @@ main {
         min-height: 100px;
     }
 
-    #searchbar{
+    #searchbar {
         width: 100px;
     }
 }
@@ -168,7 +170,8 @@ main {
         width: 30vw;
         min-height: 100px;
     }
-    #searchbar{
+
+    #searchbar {
         width: 50px;
     }
 }
@@ -178,7 +181,36 @@ main {
         width: 80vw;
         min-height: 100px;
     }
-    #searchbar{
+
+    .search {
         display: none;
+    }
+}
+
+@media screen and (max-width:300px) {
+    #button {
+        width: 50px;
+        height: 20px;
+        font-size: 10px;
+        font-weight: bold;
+        border-radius: 8px;
+    }
+
+    .side-content {
+        display: none;
+    }
+
+    .content-1 {
+        width: 100vw;
+    }
+
+    .content {
+        padding: 0;
+        height: 92vh;
+        background-color: black;
+        color: white;
+    }
+    .image{
+        border-radius: 0;
     }
 }
